@@ -8,7 +8,7 @@ const NXP = { megaMenuUrl: '//foobar' };
 // const NXP = { megaMenuUrl: '//foobar.com' }; // needs to be fixed- obviously
 const MobileMenuNav = props => {
   return (
-    <MainPanel>
+    <MainPanel >
       <Panel title="PRODUCTS" class="productsmenu" dtmname="PRODUCTS">
         <Panel
           title="ARM<sup>&reg;</sup> PROCESSORS"

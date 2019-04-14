@@ -12,12 +12,12 @@
 }
 
 .mobile-main {
-  position: fixed;
-  height: 100%;
+  /* position: fixed;
+  height: 100%; */
   width: 100%;
-  background-color: #eee;
+  /* background-color: #eee; */
   padding: 0px;
-  margin: 24px 0 0 0;
+  /* margin: 24px 0 0 0; */
 }
 .mobile-main > li,
 .mobile-main ul > li {

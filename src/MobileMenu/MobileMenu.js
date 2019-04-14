@@ -30,8 +30,8 @@ class MobileMenu extends React.PureComponent {
       this.setState({
         visible: !this.state.visible
       });
-      const hamburgerOpen = this.state.visible ? 'navbar-toggle open' : 'navbar-toggle';
-      domNode.className = hamburgerOpen;
+      // const hamburgerOpen = this.state.visible ? 'navbar-toggle open' : 'navbar-toggle';
+      // domNode.className = hamburgerOpen;
       if (this.state.visible) {
         document.documentElement.style.overflow = 'hidden';
       } else {
@@ -42,29 +42,45 @@ class MobileMenu extends React.PureComponent {
   render() {
     const { visible } = this.state;
     return (
-      <div className={cx({ mmMain: true, open: visible })}>
-        {/* <MenuTest items={MobileMenuNav} /> */}
-        {/* {this.state.visible && <MobileMenuNav />} */}
-
+     
+    //  <div className={cx({ mmMain: true, open: visible })}> 
+<div style={{position: 'absolute', top: '0px', zIndex: '999 '}}>
         <Transition
           items={visible}
           from={{ opacity: 0, transform: 'translateY(110%)' }}
-          enter={{ opacity: 1, transform: 'translateY(0%)' }}
-          leave={{ opacity: 0, transform: 'translateY(110%)' }}
+          enter={{ opacity: 1, transform: 'translateY(0%)',
+        
+          position: 'fixed',
+          top: '0px',  
+          height: '100%',
+          width: '100%',
+  backgroundColor: '#eee',
+  margin: '24px 0 0 0'
+           }}
+
+          leave={{ opacity: 0, transform: 'translateY(110%)'        }}
         >
           {visible =>
             visible &&
             (props =>
               visible && (
-                <div style={props}>
-                  <MobileMenuNav />
-                </div>
+            <div style={props} >
+                <MobileMenuNav  />
+            </div>
+                 
+            
               ))
-          }
+            }
         </Transition>
-      </div>
+        </div>
     );
   }
 }
 
 export default MobileMenu;
+
+
+//  {/* <MobileMenuNav /> */}
+
+//         {/* <MenuTest items={MobileMenuNav} /> */}
+//         {/* {this.state.visible && <MobileMenuNav />} */}
