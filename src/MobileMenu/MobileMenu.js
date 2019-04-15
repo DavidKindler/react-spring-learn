@@ -3,6 +3,7 @@ import styles from './MobileMenu.css';
 import { Transition, animated } from 'react-spring/renderprops';
 import classNames from 'classnames/bind';
 import MobileMenuNav from './MobileMenuNav';
+import BottomNav  from  './components/BottomNav'
 let cx = classNames.bind(styles);
 
 // import MobileMenuNav from '../../data/NXP_en_mobilemenu';
@@ -66,6 +67,7 @@ class MobileMenu extends React.PureComponent {
               visible && (
             <div style={props} >
                 <MobileMenuNav  />
+                <BottomNav />
             </div>
                  
             

@@ -18,20 +18,20 @@ class Panel extends React.Component {
         {this.props.href ? (
           <div style={{ paddingLeft: '10px' }}>
             <a href={this.props.href} dangerouslySetInnerHTML={renderHtml(this.props.title)} />{' '}
-            <span style={{ float: 'right', paddingRight: '10px' }} onClick={this.handlePanelToggle}>
+            <button style={{ float: 'right', padding: '3px 10px' }} onClick={this.handlePanelToggle}>
               {this.props.children.length} >>
-            </span>
+            </button>
           </div>
         ) : (
           <div style={{ paddingLeft: '10px' }}>
             <span dangerouslySetInnerHTML={renderHtml(this.props.title)} />
-            <span onClick={this.handlePanelToggle} style={{ float: 'right', paddingRight: '10px' }}>
+            <button onClick={this.handlePanelToggle} style={{ float: 'right', padding: '3px 10px' }}>
               {this.props.children.length} >>
-            </span>
+            </button>
           </div>
         )}
         <SlidePanel active={this.state.active}>
-          <div onClick={this.handlePanelToggle} dangerouslySetInnerHTML={renderHtml('<< ' + this.props.title)} />
+          <button onClick={this.handlePanelToggle} dangerouslySetInnerHTML={renderHtml('<< ' + this.props.title)} />
           {this.props.children}
         </SlidePanel>
       </li>
