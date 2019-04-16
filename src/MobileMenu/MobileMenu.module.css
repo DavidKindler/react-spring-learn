@@ -11,6 +11,11 @@
   width: 100%;
 }
 
+.wtf {
+  background-color: pink;
+  width: 100%;
+}
+
 .mobile-main {
   /* position: fixed;
   height: 100%; */
@@ -19,7 +24,9 @@
   padding: 0px;
   /* margin: 24px 0 0 0; */
 }
-.mobile-main > li  {line-height: 30px;}
+.mobile-main > li {
+  line-height: 30px;
+}
 
 .mobile-main > li,
 .mobile-main ul > li {

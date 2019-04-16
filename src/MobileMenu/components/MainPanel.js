@@ -1,10 +1,12 @@
 import React from 'react';
-import styles from '../MobileMenu.css';
-import classNames from 'classnames/bind';
-var cx = classNames.bind(styles);
+import styles from '../MobileMenu.module.css';
 
 const MainPanel = props => {
-  return <ul className={cx(['mobile-main'])}>{props.children}</ul>;
+  return (
+    <div style={{ overflow: 'scroll', height: '100%' }}>
+      <ul className={styles['mobile-main']}>{props.children}</ul>
+    </div>
+  );
 };
 
 export default MainPanel;
