@@ -1,6 +1,6 @@
 import React from 'react';
 import SlidePanel from './SlidePanel';
-import Panel from './Panel';
+// import Panel from './Panel';
 
 import renderHtml from '../../util/renderHTML';
 import HtmlToReact from 'html-to-react';
@@ -18,7 +18,7 @@ class LeftNav extends React.Component {
     this.setState({ active: !this.state.active });
   }
   render() {
-    const { title, category, leftnav } = this.props;
+    const {  leftnav } = this.props;
     // console.log('leftnav title', title);
     // console.log('leftnav category', category);
     // console.log('leftnav leftnav', leftnav);

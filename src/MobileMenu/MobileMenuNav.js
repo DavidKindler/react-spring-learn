@@ -1,6 +1,7 @@
 import React from 'react';
-import MainPanel from './components/MainPanel';
-import LeftNav from './components/LeftNav';
+// import MainPanel from './components/MainPanel';
+// import LeftNav from './components/LeftNav';
+import styles from './MobileMenu.module.css';
 
 import { ProductsMenu, ApplicationsMenu, SupportMenu, AboutMenu } from './data/NXP_mobilemenu.en';
 
@@ -47,12 +48,18 @@ const MobileMenuNav = props => {
     );
 
   return (
-    <MainPanel>
-      {Products}
-      {Applications}
-      {Support}
-      {About}
-    </MainPanel>
+    <ul className={styles['mobile-main']}>
+    {Products}
+    {Applications}
+    {Support}
+    {About}</ul>
+
+    // <MainPanel>
+    //   {Products}
+    //   {Applications}
+    //   {Support}
+    //   {About}
+    // </MainPanel>
   );
 };
 

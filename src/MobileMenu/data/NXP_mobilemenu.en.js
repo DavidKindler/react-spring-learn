@@ -1,7 +1,7 @@
 import React from 'react';
 import PanelItem from '../components/PanelItem';
 import Panel from '../components/Panel';
-import LeftNav from '../components/LeftNav';
+// import LeftNav from '../components/LeftNav';
 
 const ProductsMenu = props => {
   const { leftnav, category } = props;
@@ -9,7 +9,8 @@ const ProductsMenu = props => {
   return (
     <Panel title="PRODUCTS" class="productsmenu" dtmname="PRODUCTS" href={`${props.megaMenuUrl}/parametricSearch`}>
       <Panel
-        active
+        active={true}
+        category={category}
         title="ARM<sup>&reg;</sup> PROCESSORS"
         href={`${props.megaMenuUrl}/products/arm-processors:ARM-ARCHITECTURE`}
       >
