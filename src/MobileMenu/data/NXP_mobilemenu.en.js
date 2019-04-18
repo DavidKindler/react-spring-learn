@@ -9,7 +9,6 @@ const ProductsMenu = props => {
   return (
     <Panel title="PRODUCTS" class="productsmenu" dtmname="PRODUCTS" href={`${props.megaMenuUrl}/parametricSearch`}>
       <Panel
-        active={true}
         category={category}
         title="ARM<sup>&reg;</sup> PROCESSORS"
         href={`${props.megaMenuUrl}/products/arm-processors:ARM-ARCHITECTURE`}

@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Transition } from 'react-spring/renderprops';
+import { Transition } from 'react-spring/renderprops';
 import MobileMenuNav from './MobileMenuNav';
 import BottomNav from './components/BottomNav';
 
@@ -17,7 +17,7 @@ class MobileMenu extends React.PureComponent {
     document.addEventListener('click', this.handleClickOutside, true);
     var leftNavDomNode = document.getElementsByClassName('leftnav');
     if (leftNavDomNode.length) {
-      console.log('leftnav found')
+      console.log('leftnav found');
       let selected = document.querySelector('li.mm-selected');
       let cloneHTML = selected.outerHTML;
 
@@ -26,7 +26,7 @@ class MobileMenu extends React.PureComponent {
       clone.classList.forEach(c => q.push(c));
       let category = q.filter(i => i.indexOf('MM') > -1)[0];
 
-      this.setState({ leftnav: cloneHTML, category: category });
+      // this.setState({ leftnav: cloneHTML, category: category });
     }
   }
 
@@ -52,8 +52,9 @@ class MobileMenu extends React.PureComponent {
     const { visible } = this.state;
     return (
       <div style={{ position: 'absolute', top: '0px', zIndex: '999 ' }}>
-
-<div style={{opacity: 1,
+        {/* <div
+          style={{
+            opacity: 1,
             transform: 'translateY(0%)',
 
             position: 'fixed',
@@ -61,13 +62,14 @@ class MobileMenu extends React.PureComponent {
             height: '100%',
             width: '100%',
             backgroundColor: '#eee',
-            margin: '24px 0 0 0'}}>
-                  <MobileMenuNav category={this.state.category} leftnav={this.state.leftnav} />
-                  <BottomNav />
-                </div>
+            margin: '24px 0 0 0'
+          }}
+        >
+          <MobileMenuNav category={this.state.category} leftnav={this.state.leftnav} />
+          <BottomNav />
+        </div> */}
 
-
-        {/* <Transition
+        <Transition
           items={visible}
           from={{ opacity: 0, transform: 'translateY(110%)' }}
           enter={{
@@ -94,7 +96,7 @@ class MobileMenu extends React.PureComponent {
                 </div>
               ))
           }
-        </Transition> */}
+        </Transition>
       </div>
     );
   }
