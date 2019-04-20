@@ -15,19 +15,6 @@ class MobileMenu extends React.PureComponent {
 
   componentDidMount() {
     document.addEventListener('click', this.handleClickOutside, true);
-    var leftNavDomNode = document.getElementsByClassName('leftnav');
-    if (leftNavDomNode.length) {
-      console.log('leftnav found');
-      let selected = document.querySelector('li.mm-selected');
-      let cloneHTML = selected.outerHTML;
-
-      let clone = leftNavDomNode[0].cloneNode(true);
-      let q = [];
-      clone.classList.forEach(c => q.push(c));
-      let category = q.filter(i => i.indexOf('MM') > -1)[0];
-
-      // this.setState({ leftnav: cloneHTML, category: category });
-    }
   }
 
   componentWillUnmount() {

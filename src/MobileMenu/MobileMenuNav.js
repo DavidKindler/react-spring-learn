@@ -49,10 +49,11 @@ const MobileMenuNav = props => {
 
   return (
     <ul className={styles['mobile-main']}>
-    {Products}
-    {Applications}
-    {Support}
-    {About}</ul>
+      {Products}
+      {Applications}
+      {Support}
+      {About}
+    </ul>
 
     // <MainPanel>
     //   {Products}
