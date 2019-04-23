@@ -1,5 +1,5 @@
 import { a, b } from './data/NXP_mobilemenu_ORIG';
-import './mmenu-js/src/mmenu';
+// import 'mmenu-js';
 
 var temp = document.createElement('div');
 var q = a();
