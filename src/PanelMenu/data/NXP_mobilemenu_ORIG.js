@@ -4,7 +4,13 @@ function a() {
   return `
 	<div>
 	<ul>
-		<li>Product1</li>
+		<li>Product1
+		<ul>
+			<li>Product 1-a</li>
+			<li>Product 1-b</li>
+			<li>Product 1-c</li>
+		</ul>
+		</li>
 		<li>Product2</li>
 		<li>Product3</li>
 		<li>Product4</li>

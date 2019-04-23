@@ -13,7 +13,7 @@ class PanelMenu extends Component {
 
     this.handleClickOutside = this.handleClickOutside.bind(this);
     this.navButton = this.navButton.bind(this);
-    this.state = { visible: false, active: 0 };
+    this.state = { visible: false, active: 2 };
   }
 
   componentDidMount() {
