@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import Panels from './Panels';
 import styles from './PanelMenu.module.css';
-import { x, LeftNavJSX, menu } from './convertMobileMenu';
+import { x } from './convertMobileMenu';
+import convertToJSX from './convertToJSX';
 
 function Test() {
-  return <div>{LeftNavJSX(x)}</div>;
+  return <div>{convertToJSX(x)}</div>;
 }
 class PanelMenu extends Component {
   constructor(props) {
