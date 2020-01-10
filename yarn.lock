@@ -6220,10 +6220,10 @@ mmenu-js@^8.0.3:
   resolved "https://registry.yarnpkg.com/mmenu-js/-/mmenu-js-8.0.3.tgz#6d65b7da29a8ca02e763539890dc4be14b8332ef"
   integrity sha512-6qocB8dx+ookCoSB0pIZyxfK6p+0cnJ/WfGXuW41vzDyTPzFNP8e0XU9GUIjdBuafdyN9/IOWpPpiFVaz995xA==
 
-mmenu-light@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/mmenu-light/-/mmenu-light-1.0.3.tgz#14279cf2d4b65fe0d8271ededf7ee312c9d05f71"
-  integrity sha512-uMnC0ccVxAOo2IMsrwk9vLa7f04vqCD0vyiSr0p0It3rUmnXVPKzIuO1j79HLZmopQiZ6IvWWczOY/mQLGCx3Q==
+mmenu-light@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/mmenu-light/-/mmenu-light-1.1.0.tgz#aea1b6a824b3270d6e1b26f8cec6d0ea02bb0ece"
+  integrity sha512-C6rU1a6WJrxAjiJJ9aVD8nvozyxTKBL12DDCZTxuATN1qtWUMYhRVCIEckswpQStYDkOghvg8pKCzXVseeJaMw==
 
 move-concurrently@^1.0.1:
   version "1.0.1"
