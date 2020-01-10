@@ -6215,10 +6215,10 @@ mkdirp@0.5.1, mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@
   dependencies:
     minimist "0.0.8"
 
-mmenu-js@^8.0.3:
-  version "8.0.3"
-  resolved "https://registry.yarnpkg.com/mmenu-js/-/mmenu-js-8.0.3.tgz#6d65b7da29a8ca02e763539890dc4be14b8332ef"
-  integrity sha512-6qocB8dx+ookCoSB0pIZyxfK6p+0cnJ/WfGXuW41vzDyTPzFNP8e0XU9GUIjdBuafdyN9/IOWpPpiFVaz995xA==
+mmenu-js@^8.4.5:
+  version "8.4.6"
+  resolved "https://registry.yarnpkg.com/mmenu-js/-/mmenu-js-8.4.6.tgz#128e1c9f57fe768b298444aab71c6209b489fff6"
+  integrity sha512-GCNXXmKW+HoohZhPTJAbbzIYAbssDMgUucZLpYOENPv55PRT5/XjYF9Or6D8+A2ZmzjHFbpJtpCR7VEyUJpsNg==
 
 mmenu-light@^1.0.3:
   version "1.0.3"
