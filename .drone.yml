@@ -1,0 +1,10 @@
+kind: pipeline
+name: npm audit
+
+steps:
+- name: audit
+  image: node:10-alpine
+  commands:
+    - npm audit --force
+
+
