@@ -5,7 +5,13 @@ function a() {
 	<div>
 	<ul>
 		<li>Product1</li>
-		<li>Product2</li>
+		<li>Product2
+		<ul>
+			<li>Product2-1</li>
+			<li>Product2-2</li>
+			<li>Product2-3</li>
+		</ul>
+		</li>
 		<li>Product3</li>
 		<li>Product4</li>
 	</ul>
