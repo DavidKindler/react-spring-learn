@@ -16,6 +16,7 @@
     "react-spring": "^8.0.27"
   },
   "scripts": {
+    "audit": "./bin/audit.sh",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
