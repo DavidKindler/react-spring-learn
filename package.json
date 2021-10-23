@@ -8,19 +8,20 @@
     "html-to-react": "^1.4.2",
     "mmenu-js": "^8.0.3",
     "mmenu-light": "^1.1.0",
-
     "react": "^16.8.1",
     "react-dom": "^16.12.0",
-
     "react-scripts": "3.0.0",
-    "react-spring": "^8.0.27"
+    "react-spring": "^8.0.27",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "audit": "./bin/audit.sh",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +31,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "snyk": true
 }
