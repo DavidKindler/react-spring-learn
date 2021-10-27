@@ -6862,10 +6862,10 @@ mkdirp@0.5.1, mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@
   dependencies:
     minimist "0.0.8"
 
-mmenu-js@^8.0.3:
-  version "8.4.7"
-  resolved "https://registry.yarnpkg.com/mmenu-js/-/mmenu-js-8.4.7.tgz#567033b1147f6922d7f2665636563428af9046f0"
-  integrity sha512-2YGbAWkN5HIBpegi0gknnM9n5yDqQrKBi+sxgnmqRgvXEzj0IW4nAk3dAVGm8IGG9tQMGKxJvkzK6Rv6fCJ/fA==
+mmenu-js@^8.5.24:
+  version "8.5.24"
+  resolved "https://registry.yarnpkg.com/mmenu-js/-/mmenu-js-8.5.24.tgz#86011ac002be62da70a5848fd6a730fba84b31f1"
+  integrity sha512-IfWtD2J13mLv2g3NOVNsfiDiWutzdLsFkNeFrtlWYKYVT/UnycXA/ud7buXw6BWZkhJpW7zIGLNGzTkaBsKgkQ==
 
 mmenu-light@^1.1.0:
   version "1.1.0"
@@ -8066,10 +8066,6 @@ postcss-normalize-unicode@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/postcss-normalize-unicode/-/postcss-normalize-unicode-4.0.1.tgz#841bd48fdcf3019ad4baa7493a3d363b52ae1cfb"
   integrity sha512-od18Uq2wCYn+vZ/qCOeutvHjB5jm57ToxRaMeNuf0nWVHaP9Hua56QyMF6fs/4FSUnVIw0CBPsU0K4LnBPwYwg==
-  dependencies:
-    browserslist "^4.0.0"
-    postcss "^7.0.0"
-    postcss-value-parser "^3.0.0"
 
 postcss-normalize-url@^4.0.1:
   version "4.0.1"
